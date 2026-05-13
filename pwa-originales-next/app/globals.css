@@ -1,4 +1,89 @@
 :root {
+  --bg: linear-gradient(140deg, #ecfeff, #ecfccb 65%);
+  --card: #ffffff;
+  --ink: #1f2937;
+  --brand: #0f766e;
+  --brand-2: #14532d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.topbar {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(236, 254, 255, 0.82);
+  border-bottom: 1px solid #a7f3d0;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: var(--brand-2);
+  font-weight: 700;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #99f6e4;
+  box-shadow: 0 12px 30px -20px #065f46;
+}
+
+.chip {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  background: #ccfbf1;
+  color: #115e59;
+  font-size: 0.82rem;
+  margin-right: 0.4rem;
+}
+
+button {
+  border: 0;
+  border-radius: 0.8rem;
+  padding: 0.65rem 1rem;
+  background: var(--brand);
+  color: white;
+  font-weight: 700;
+}
+:root {
   --bg: #f7f3e9;
   --paper: #fffef8;
   --ink: #1f2a2d;
